@@ -1,0 +1,11 @@
+{
+  "name": "jieguxinsheng",
+  "version": "1.0.0",
+  "description": "秸谷新生 — 东北秸秆资源化收储运一体化服务平台",
+  "scripts": {
+    "start": "npx serve . -l 3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
