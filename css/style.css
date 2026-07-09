@@ -1248,6 +1248,56 @@ img { max-width: 100%; display: block; }
     color: #666;
 }
 
+
+
+/* ============================================================
+   图片内容样式
+   ============================================================ */
+
+.section-image {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.content-image {
+    max-width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.image-caption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.image-row-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image-col {
+    text-align: center;
+}
+
+.image-col .content-image {
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .image-row, .image-row-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ============================================================
    响应式设计
    ============================================================ */
